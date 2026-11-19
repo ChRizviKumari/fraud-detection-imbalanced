@@ -1,0 +1,47 @@
+{
+  "synthetic_data": true,
+  "seed": 42,
+  "n_transactions": 150000,
+  "split": {
+    "train": {
+      "rows": 90228,
+      "fraud_rate": 0.009265416500421154
+    },
+    "val": {
+      "rows": 30059,
+      "fraud_rate": 0.012042982135134236
+    },
+    "test": {
+      "rows": 29713,
+      "fraud_rate": 0.010163901322653384
+    }
+  },
+  "selected_model": "hgb_balanced",
+  "costs": {
+    "false_positive": 10.0,
+    "false_negative": 150.0,
+    "review": 2.0
+  },
+  "binary_threshold": 0.05355537655390482,
+  "policy": {
+    "review_threshold": 0.030172925542935762,
+    "block_threshold": 0.997847466954724
+  },
+  "test_cost_by_strategy": {
+    "approve_everything": 45300.0,
+    "threshold_0.5": 10810.0,
+    "cost_optimal_threshold": 9910.0,
+    "three_way_policy": 7190.0
+  },
+  "test_confusion_at_cost_optimal_threshold": {
+    "tp": 258,
+    "fp": 331,
+    "fn": 44,
+    "tn": 29080
+  },
+  "test_policy_decisions": {
+    "approve": 29003,
+    "review": 595,
+    "block": 115
+  }
+}
